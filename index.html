@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JeeThy Labs — AI-Powered Tools for Everyone</title>
+  <meta name="description" content="JeeThy Labs provides cutting-edge AI tools: AI Assistant, Image Generation, and Song Generation — powered by Google Cloud." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=DM+Sans:ital,wght@0,300..700;1,300..500&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <img src="logo.jpg" alt="JeeThy Labs Logo" class="logo-img" width="40" height="40" />
+      <span class="logo-text">JeeThy<span class="logo-accent">Labs</span></span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#tools" class="nav-link">Tools</a></li>
+      <li><a href="#technology" class="nav-link">Technology</a></li>
+      <li><a href="#pricing" class="nav-link">Pricing</a></li>
+      <li><a href="#partners" class="nav-link">Partnership</a></li>
+      <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+      <li><a href="#about" class="nav-link">About & Team</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark/light mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="#pricing" class="btn btn-primary btn-sm">Get Started</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO / HOME
+============================================================ -->
+<section id="home" class="hero-section">
+  <div class="hero-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-badge fade-in">
+      <span class="badge-dot"></span>
+      Powered by Google Cloud $300 Credit
+    </div>
+
+    <h1 class="hero-title fade-in">
+      Build Smarter with<br/>
+      <span class="gradient-text">AI-Powered Tools</span>
+    </h1>
+
+    <p class="hero-subtitle fade-in">
+      JeeThy Labs brings you next-generation AI tools — Chat Assistants, Image Generation, and Song Creation — all in one elegant platform built for creators, developers, and innovators.
+    </p>
+
+    <div class="hero-actions fade-in">
+      <a href="#tools" class="btn btn-primary btn-lg">
+        <i class="fas fa-rocket"></i> Explore Tools
+      </a>
+      <a href="#pricing" class="btn btn-outline btn-lg">View Pricing</a>
+    </div>
+
+    <!-- Live Stats -->
+    <div class="hero-stats fade-in">
+      <div class="stat-item">
+        <span class="stat-number" data-target="1240">0</span>
+        <span class="stat-label">AI Conversations</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="863">0</span>
+        <span class="stat-label">Images Generated</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="412">0</span>
+        <span class="stat-label">Songs Created</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number live-pulse" id="liveUsers">47</span>
+        <span class="stat-label"><span class="live-dot"></span> Live Users</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Tool Cards -->
+  <div class="floating-cards">
+    <div class="float-card float-card-1 fade-in">
+      <div class="float-card-icon"><i class="fas fa-comments"></i></div>
+      <div class="float-card-text">AI Assistant</div>
+      <div class="float-card-status"><span class="status-dot"></span> Active</div>
+    </div>
+    <div class="float-card float-card-2 fade-in">
+      <div class="float-card-icon"><i class="fas fa-image"></i></div>
+      <div class="float-card-text">Image AI</div>
+      <div class="float-card-status"><span class="status-dot"></span> Active</div>
+    </div>
+    <div class="float-card float-card-3 fade-in">
+      <div class="float-card-icon"><i class="fas fa-music"></i></div>
+      <div class="float-card-text">Song Gen</div>
+      <div class="float-card-status"><span class="status-dot"></span> Active</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TOOLS
+============================================================ -->
+<section id="tools" class="section tools-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Our Tools</span>
+      <h2 class="section-title">Three Powerful AI Tools</h2>
+      <p class="section-subtitle">Everything you need to create, communicate, and innovate — powered by state-of-the-art AI models.</p>
+    </div>
+
+    <div class="tools-grid">
+
+      <!-- AI Assistant -->
+      <div class="tool-card reveal-on-scroll">
+        <div class="tool-glow glow-purple"></div>
+        <div class="tool-header">
+          <div class="tool-icon icon-purple">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="tool-badge">Most Popular</div>
+        </div>
+        <h3 class="tool-name">AI Assistant</h3>
+        <p class="tool-desc">Engage in natural, context-aware conversations with our intelligent AI assistant. From answering complex questions to writing code, drafting emails, and analyzing data — your AI companion is available 24/7.</p>
+        <ul class="tool-features">
+          <li><i class="fas fa-check-circle"></i> Multi-turn Conversation Memory</li>
+          <li><i class="fas fa-check-circle"></i> Code Generation & Review</li>
+          <li><i class="fas fa-check-circle"></i> Document Summarization</li>
+          <li><i class="fas fa-check-circle"></i> Multilingual Support (100+ languages)</li>
+        </ul>
+        <div class="tool-demo">
+          <div class="demo-chat">
+            <div class="chat-msg user">How do I optimize a React component?</div>
+            <div class="chat-msg ai">
+              <span class="typing-indicator" id="aiTyping">
+                <i>Use React.memo, useCallback, and useMemo to prevent unnecessary re-renders...</i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a href="javascript:void(0)" onclick="openAppModal('chat')" class="btn btn-try btn-try-purple"><i class="fas fa-bolt"></i> Try AI Assistant</a>
+          <a href="#pricing" class="btn btn-outline-sm">View Plans</a>
+        </div>
+      </div>
+
+      <!-- Image Generate -->
+      <div class="tool-card reveal-on-scroll">
+        <div class="tool-glow glow-cyan"></div>
+        <div class="tool-header">
+          <div class="tool-icon icon-cyan">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="tool-badge badge-new">New</div>
+        </div>
+        <h3 class="tool-name">Image Generate</h3>
+        <p class="tool-desc">Transform your text descriptions into stunning, high-resolution images within seconds. Whether it's art, product mockups, illustrations, or photorealistic visuals — the only limit is your imagination.</p>
+        <ul class="tool-features">
+          <li><i class="fas fa-check-circle"></i> High-Resolution Output (4K)</li>
+          <li><i class="fas fa-check-circle"></i> Multiple Art Styles</li>
+          <li><i class="fas fa-check-circle"></i> Inpainting & Outpainting</li>
+          <li><i class="fas fa-check-circle"></i> Batch Generation</li>
+        </ul>
+        <div class="tool-demo">
+          <div class="image-gen-preview">
+            <!-- Gallery Slider -->
+            <div class="gen-gallery" id="imgGallery">
+              <div class="gen-gallery-track" id="imgGalleryTrack">
+                <!-- Slide 1 -->
+                <div class="gen-slide">
+                  <img src="khmer-landscape.jpg" alt="AI Generated: Khmer countryside" class="gen-result-img" />
+                  <div class="gen-result-caption">
+                    <i class="fas fa-sparkles"></i>
+                    <span>AI Generated · Khmer countryside at golden sunset</span>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="gen-slide">
+                  <img src="angkor-wat-sunrise.jpg" alt="AI Generated: Angkor Wat at sunrise" class="gen-result-img" />
+                  <div class="gen-result-caption">
+                    <i class="fas fa-sparkles"></i>
+                    <span>AI Generated · Angkor Wat at sunrise</span>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="gen-slide">
+                  <img src="forest-trees.jpg" alt="AI Generated: Majestic ancient forest trees" class="gen-result-img" />
+                  <div class="gen-result-caption">
+                    <i class="fas fa-sparkles"></i>
+                    <span>AI Generated · Ancient enchanted forest</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Controls -->
+              <button class="gallery-btn gallery-prev" onclick="gallerySlide(-1)" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="gallery-btn gallery-next" onclick="gallerySlide(1)" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <!-- Dots -->
+              <div class="gallery-dots">
+                <span class="gallery-dot active" onclick="galleryGoTo(0)"></span>
+                <span class="gallery-dot" onclick="galleryGoTo(1)"></span>
+                <span class="gallery-dot" onclick="galleryGoTo(2)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a href="javascript:void(0)" onclick="openAppModal('image')" class="btn btn-try btn-try-cyan"><i class="fas fa-bolt"></i> Try Image Generate</a>
+          <a href="#pricing" class="btn btn-outline-sm">View Plans</a>
+        </div>
+      </div>
+
+      <!-- Song Generate -->
+      <div class="tool-card reveal-on-scroll">
+        <div class="tool-glow glow-green"></div>
+        <div class="tool-header">
+          <div class="tool-icon icon-green">
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="tool-badge badge-beta">Beta</div>
+        </div>
+        <h3 class="tool-name">Song Generate</h3>
+        <p class="tool-desc">Create original music compositions from simple text prompts. Choose your genre, mood, and instruments — our AI composes unique songs tailored to your vision, perfect for content creators, filmmakers, and musicians.</p>
+        <ul class="tool-features">
+          <li><i class="fas fa-check-circle"></i> 50+ Music Genres</li>
+          <li><i class="fas fa-check-circle"></i> Custom Lyrics Generation</li>
+          <li><i class="fas fa-check-circle"></i> Stem Download (vocals, beats)</li>
+          <li><i class="fas fa-check-circle"></i> Commercial License Included</li>
+        </ul>
+        <div class="tool-demo">
+          <div class="music-wave">
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+            <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+          </div>
+          <div class="music-info"><i class="fas fa-play-circle"></i> AI Composition Playing...</div>
+        </div>
+        <!-- Demo Audio Player -->
+        <div class="demo-audio-wrap">
+          <div class="demo-audio-label">
+            <i class="fas fa-headphones"></i>
+            <span>Demo Track · Relaxing Ambient · 1:00</span>
+          </div>
+          <audio controls class="demo-audio-player" preload="none">
+            <source src="demo-relaxing-60s.mp3" type="audio/mpeg" />
+            Your browser does not support audio.
+          </audio>
+        </div>
+        <div class="tool-actions">
+          <a href="javascript:void(0)" onclick="openAppModal('song')" class="btn btn-try btn-try-green"><i class="fas fa-bolt"></i> Try Song Generate</a>
+          <a href="#pricing" class="btn btn-outline-sm">View Plans</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TECHNOLOGY
+============================================================ -->
+<section id="technology" class="section tech-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Under the Hood</span>
+      <h2 class="section-title">Built on Cutting-Edge Technology</h2>
+      <p class="section-subtitle">JeeThy Labs harnesses the latest in AI infrastructure, leveraging Google Cloud's powerful ecosystem to deliver fast, reliable, and scalable AI experiences.</p>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-feature reveal-on-scroll">
+        <div class="tech-icon"><i class="fab fa-google"></i></div>
+        <h3>Google Cloud Infrastructure</h3>
+        <p>Our entire platform runs on Google Cloud's $300 credit program, utilizing Vertex AI, Cloud Run, and Cloud Storage for elastic scaling, zero-downtime deployments, and global edge performance.</p>
+      </div>
+      <div class="tech-feature reveal-on-scroll">
+        <div class="tech-icon"><i class="fas fa-microchip"></i></div>
+        <h3>Large Language Models</h3>
+        <p>Integrated with state-of-the-art LLMs through Google's Gemini API, OpenAI-compatible endpoints, and custom fine-tuned models optimized for Southeast Asian languages including Khmer.</p>
+      </div>
+      <div class="tech-feature reveal-on-scroll">
+        <div class="tech-icon"><i class="fas fa-shield-halved"></i></div>
+        <h3>Enterprise-Grade Security</h3>
+        <p>AES-256 encryption at rest and TLS 1.3 in transit. OAuth 2.0 authentication, rate limiting, abuse detection, and GDPR-compliant data handling keep your data safe at all times.</p>
+      </div>
+      <div class="tech-feature reveal-on-scroll">
+        <div class="tech-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Real-Time Processing</h3>
+        <p>Responses stream in real-time via WebSocket and SSE protocols. Average AI response latency under 200ms thanks to model caching, GPU acceleration, and intelligent request routing.</p>
+      </div>
+      <div class="tech-feature reveal-on-scroll">
+        <div class="tech-icon"><i class="fas fa-code-branch"></i></div>
+        <h3>Open API & Webhooks</h3>
+        <p>REST and GraphQL APIs allow seamless integration into your existing workflows. Webhook support for async tasks, rate limit controls, and SDK libraries in Python, JavaScript, and Go.</p>
+      </div>
+      <div class="tech-feature reveal-on-scroll">
+        <div class="tech-icon"><i class="fas fa-server"></i></div>
+        <h3>Deployed on Railway Pro</h3>
+        <p>Backend services are deployed on Railway Pro with auto-scaling, persistent volumes, private networking, and GitHub CI/CD integration — ensuring 99.9% uptime and instant rollbacks.</p>
+      </div>
+    </div>
+
+    <!-- Tech Stack Bar -->
+    <div class="tech-stack reveal-on-scroll">
+      <p class="stack-label">Our Technology Stack</p>
+      <div class="stack-items">
+        <span class="stack-item">Google Cloud</span>
+        <span class="stack-item">Vertex AI</span>
+        <span class="stack-item">Gemini API</span>
+        <span class="stack-item">Node.js</span>
+        <span class="stack-item">Python</span>
+        <span class="stack-item">React</span>
+        <span class="stack-item">PostgreSQL</span>
+        <span class="stack-item">Redis</span>
+        <span class="stack-item">Railway Pro</span>
+        <span class="stack-item">GitHub Actions</span>
+        <span class="stack-item">WebSocket</span>
+        <span class="stack-item">Docker</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+============================================================ -->
+<section id="pricing" class="section pricing-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Simple Pricing</span>
+      <h2 class="section-title">Choose Your Plan</h2>
+      <p class="section-subtitle">Start for free, scale as you grow. No hidden fees, no contracts.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- Free -->
+      <div class="pricing-card reveal-on-scroll">
+        <div class="plan-header">
+          <span class="plan-name">Free</span>
+          <div class="plan-price">
+            <span class="price-amount">$0</span>
+            <span class="price-period">/ month</span>
+          </div>
+          <p class="plan-desc">Perfect for exploring JeeThy Labs and testing your first AI projects.</p>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fas fa-check"></i> 50 AI Assistant messages/day</li>
+          <li><i class="fas fa-check"></i> 10 image generations/month</li>
+          <li><i class="fas fa-check"></i> 5 song generations/month</li>
+          <li><i class="fas fa-check"></i> Standard quality output</li>
+          <li><i class="fas fa-check"></i> Community support</li>
+          <li class="feature-limited"><i class="fas fa-times"></i> No API access</li>
+          <li class="feature-limited"><i class="fas fa-times"></i> No priority processing</li>
+          <li class="feature-limited"><i class="fas fa-times"></i> Watermarked outputs</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline btn-full">Get Started Free</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="pricing-card pricing-card-featured reveal-on-scroll">
+        <div class="plan-popular">Most Popular</div>
+        <div class="plan-header">
+          <span class="plan-name">Pro</span>
+          <div class="plan-price">
+            <span class="price-amount">$9.99</span>
+            <span class="price-period">/ month</span>
+          </div>
+          <p class="plan-desc">For creators and small teams who need more power and flexibility.</p>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fas fa-check"></i> 1,000 AI Assistant messages/day</li>
+          <li><i class="fas fa-check"></i> 200 image generations/month</li>
+          <li><i class="fas fa-check"></i> 50 song generations/month</li>
+          <li><i class="fas fa-check"></i> HD quality output</li>
+          <li><i class="fas fa-check"></i> Priority email support</li>
+          <li><i class="fas fa-check"></i> Basic API access</li>
+          <li><i class="fas fa-check"></i> Priority processing queue</li>
+          <li class="feature-limited"><i class="fas fa-times"></i> No watermarks</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-full">Start Pro Plan</a>
+      </div>
+
+      <!-- Max -->
+      <div class="pricing-card pricing-card-max reveal-on-scroll">
+        <div class="plan-coming-soon">Coming Soon</div>
+        <div class="plan-header">
+          <span class="plan-name">Max</span>
+          <div class="plan-price">
+            <span class="price-amount">???</span>
+            <span class="price-period">/ month</span>
+          </div>
+          <p class="plan-desc">Unlimited power for enterprises, agencies, and power users.</p>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fas fa-check"></i> Unlimited AI messages</li>
+          <li><i class="fas fa-check"></i> Unlimited image generations</li>
+          <li><i class="fas fa-check"></i> Unlimited song generations</li>
+          <li><i class="fas fa-check"></i> 4K ultra quality output</li>
+          <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+          <li><i class="fas fa-check"></i> Full API access + webhooks</li>
+          <li><i class="fas fa-check"></i> Custom model fine-tuning</li>
+          <li><i class="fas fa-check"></i> White-label options</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline btn-full btn-disabled" aria-disabled="true">Notify Me</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARTNERS
+============================================================ -->
+<section id="partners" class="section partners-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Partnership</span>
+      <h2 class="section-title">Seeking Startup Partners</h2>
+      <p class="section-subtitle">JeeThy Labs is actively applying to leading startup programs and technology partnerships to accelerate our growth and serve our users better.</p>
+    </div>
+
+    <div class="partner-status-banner reveal-on-scroll">
+      <i class="fas fa-handshake"></i>
+      <span>We are currently applying and seeking partnerships with the following organizations</span>
+    </div>
+
+    <div class="partners-grid">
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fab fa-google"></i></div>
+        <span class="partner-name">Google Cloud</span>
+        <span class="partner-desc">Up to $200K cloud credits + AI/ML tools via Google for Startups program.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fab fa-github"></i></div>
+        <span class="partner-name">GitHub Enterprise</span>
+        <span class="partner-desc">Advanced DevOps tooling, GitHub Copilot AI, and CI/CD for startup teams.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-wave-square"></i></div>
+        <span class="partner-name">ElevenLabs</span>
+        <span class="partner-desc">Industry-leading AI voice synthesis & audio generation API for our Song Generate tool.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fab fa-aws"></i></div>
+        <span class="partner-name">AWS</span>
+        <span class="partner-desc">Amazon Web Services Activate — up to $100K in cloud credits for startups.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-circle-nodes"></i></div>
+        <span class="partner-name">Perplexity AI</span>
+        <span class="partner-desc">AI-native search API powering real-time knowledge retrieval inside our Assistant.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-robot"></i></div>
+        <span class="partner-name">OpenAI</span>
+        <span class="partner-desc">GPT-4o and DALL-E APIs powering AI conversations and image generation capabilities.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fab fa-digital-ocean"></i></div>
+        <span class="partner-name">DigitalOcean</span>
+        <span class="partner-desc">Hatch program offers $100K+ credits for scalable cloud infrastructure and databases.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-key"></i></div>
+        <span class="partner-name">JoinSecret</span>
+        <span class="partner-desc">Exclusive startup deals marketplace — hundreds of thousands in software discounts.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fab fa-hubspot"></i></div>
+        <span class="partner-name">HubSpot</span>
+        <span class="partner-desc">HubSpot for Startups offers 75–90% off CRM, marketing, and sales tools.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fab fa-microsoft"></i></div>
+        <span class="partner-name">Microsoft Azure</span>
+        <span class="partner-desc">Microsoft for Startups Founders Hub — $150K Azure credits, GitHub, and OpenAI access.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-microchip"></i></div>
+        <span class="partner-name">NVIDIA Inception</span>
+        <span class="partner-desc">Free GPU computing access and AI software stack for deep learning workloads.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-cloud"></i></div>
+        <span class="partner-name">Cloudflare</span>
+        <span class="partner-desc">Workers AI, CDN, DDoS protection, and zero-trust security for global edge delivery.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fab fa-stripe"></i></div>
+        <span class="partner-name">Stripe</span>
+        <span class="partner-desc">Global payment infrastructure to power subscriptions, billing, and revenue operations.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-note-sticky"></i></div>
+        <span class="partner-name">Notion</span>
+        <span class="partner-desc">All-in-one workspace for team collaboration, documentation, and product planning.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-triangle"></i></div>
+        <span class="partner-name">Vercel</span>
+        <span class="partner-desc">Frontend deployment and edge serverless platform optimized for AI-powered apps.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+      <div class="partner-card reveal-on-scroll">
+        <div class="partner-logo"><i class="fas fa-atom"></i></div>
+        <span class="partner-name">Anthropic</span>
+        <span class="partner-desc">Claude AI API — industry-leading conversational AI for safe, intelligent assistant features.</span>
+        <span class="partner-status applying">Applying</span>
+      </div>
+    </div>
+
+    <div class="partner-cta reveal-on-scroll">
+      <p>Are you a company interested in partnering with JeeThy Labs?</p>
+      <a href="mailto:startup@jeethylabs.site" class="btn btn-primary">
+        <i class="fas fa-envelope"></i> Contact for Partnership
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MVP ROADMAP / MISSION
+============================================================ -->
+<section id="roadmap" class="section roadmap-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Our Journey</span>
+      <h2 class="section-title">From MVP to the Future</h2>
+      <p class="section-subtitle">JeeThy Labs is currently an MVP — a bold first step. With the right funding and partnerships, we have a clear roadmap to build something transformative.</p>
+    </div>
+
+    <div class="mission-statement reveal-on-scroll">
+      <div class="mission-icon"><i class="fas fa-seedling"></i></div>
+      <div class="mission-text">
+        <h3>Our Mission Statement</h3>
+        <p>We are currently in our <strong>MVP (Minimum Viable Product)</strong> phase — building, testing, and proving that our AI tools work and that people love using them. This platform is our proof of concept: three AI tools, one platform, built with passion from Phnom Penh, Cambodia.</p>
+        <p>We believe that with the right support — whether through <strong>cloud credits, equity-free grants, or seed funding</strong> from leading technology companies like Google Cloud, OpenAI, AWS, NVIDIA, and others — we can take JeeThy Labs to the next level. Every dollar of credit and every partnership is a vote of confidence that helps us serve more users, build more features, and grow our team.</p>
+        <p class="mission-highlight"><i class="fas fa-quote-left"></i> If the big companies believe in us and provide credits or funding, we will continue building — from MVP to full product, from Cambodia to the world. <i class="fas fa-quote-right"></i></p>
+      </div>
+    </div>
+
+    <div class="roadmap-grid">
+
+      <div class="roadmap-card roadmap-active reveal-on-scroll">
+        <div class="roadmap-phase">Phase 1</div>
+        <div class="roadmap-badge active"><i class="fas fa-circle-check"></i> In Progress</div>
+        <h3 class="roadmap-title">MVP Launch</h3>
+        <p class="roadmap-desc">Launch the core platform with 3 AI tools (AI Assistant, Image Generate, Song Generate), basic authentication, and Free tier access. Validate product-market fit with early users.</p>
+        <ul class="roadmap-items">
+          <li><i class="fas fa-check"></i> AI Assistant (Chat)</li>
+          <li><i class="fas fa-check"></i> Image Generation</li>
+          <li><i class="fas fa-check"></i> Song Generation</li>
+          <li><i class="fas fa-check"></i> Landing Page + Pricing</li>
+          <li><i class="fas fa-spinner fa-spin"></i> User Authentication</li>
+        </ul>
+      </div>
+
+      <div class="roadmap-card reveal-on-scroll">
+        <div class="roadmap-phase">Phase 2</div>
+        <div class="roadmap-badge pending"><i class="fas fa-clock"></i> Pending Funding</div>
+        <h3 class="roadmap-title">Growth & Monetization</h3>
+        <p class="roadmap-desc">Introduce Pro subscriptions, expand AI model quality, launch API access for developers, and onboard the first 1,000 paying users across Southeast Asia.</p>
+        <ul class="roadmap-items">
+          <li><i class="fas fa-lock"></i> Pro Subscription ($9.99/mo)</li>
+          <li><i class="fas fa-lock"></i> Developer API Portal</li>
+          <li><i class="fas fa-lock"></i> Khmer Language Support</li>
+          <li><i class="fas fa-lock"></i> Mobile App (iOS + Android)</li>
+          <li><i class="fas fa-lock"></i> Advanced Image Editing</li>
+        </ul>
+      </div>
+
+      <div class="roadmap-card reveal-on-scroll">
+        <div class="roadmap-phase">Phase 3</div>
+        <div class="roadmap-badge future"><i class="fas fa-rocket"></i> Future Vision</div>
+        <h3 class="roadmap-title">Scale & Expand</h3>
+        <p class="roadmap-desc">Expand across Southeast Asia, launch enterprise solutions, introduce custom AI model fine-tuning, and establish JeeThy Labs as the leading AI platform in the region.</p>
+        <ul class="roadmap-items">
+          <li><i class="fas fa-lock"></i> Max Plan (Unlimited)</li>
+          <li><i class="fas fa-lock"></i> Enterprise White-Label</li>
+          <li><i class="fas fa-lock"></i> Custom Model Fine-Tuning</li>
+          <li><i class="fas fa-lock"></i> Southeast Asia Expansion</li>
+          <li><i class="fas fa-lock"></i> AI Education Platform</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="funding-callout reveal-on-scroll">
+      <div class="funding-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+      <div class="funding-text">
+        <h3>Help Us Build the Future</h3>
+        <p>JeeThy Labs is actively seeking cloud credits, startup grants, accelerator programs, and seed funding. If you are an investor, tech company, or program manager who believes in democratizing AI for Southeast Asia — we'd love to talk.</p>
+      </div>
+      <a href="mailto:startup@jeethylabs.site" class="btn btn-primary">
+        <i class="fas fa-envelope"></i> Reach Out
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT & TEAM
+============================================================ -->
+<section id="about" class="section about-section">
+  <div class="container">
+
+    <!-- About -->
+    <div class="section-header">
+      <span class="section-tag">Our Story</span>
+      <h2 class="section-title">About JeeThy Labs</h2>
+    </div>
+
+    <div class="about-grid reveal-on-scroll">
+      <div class="about-text">
+        <h3>Our Mission</h3>
+        <p>JeeThy Labs was founded with one clear mission: to democratize access to powerful AI tools for creators, students, entrepreneurs, and businesses across Southeast Asia and beyond. We believe AI should be accessible, affordable, and useful — not just for tech giants, but for everyone.</p>
+        <p>Born in Cambodia and powered by Google Cloud, our platform bridges the gap between cutting-edge AI capabilities and real-world practical applications. From helping a student write a better essay to empowering a small business owner create marketing content, JeeThy Labs is the AI companion for the modern creator.</p>
+        <h3 style="margin-top: var(--space-8);">Our Vision</h3>
+        <p>To become the leading AI tools platform in Southeast Asia — a hub where innovation meets accessibility, where language is no barrier, and where every user — from Phnom Penh to Singapore — can harness the power of AI to build something extraordinary.</p>
+        <div class="about-values">
+          <div class="value-item"><i class="fas fa-star"></i><span>Innovation First</span></div>
+          <div class="value-item"><i class="fas fa-globe-asia"></i><span>Local Roots, Global Vision</span></div>
+          <div class="value-item"><i class="fas fa-users"></i><span>Community Driven</span></div>
+          <div class="value-item"><i class="fas fa-lock-open"></i><span>Open Access</span></div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card-stat">
+          <div class="big-number">2024</div>
+          <div class="big-label">Founded in Phnom Penh, Cambodia</div>
+        </div>
+        <div class="about-card-stat">
+          <div class="big-number">3</div>
+          <div class="big-label">AI Tools Available</div>
+        </div>
+        <div class="about-card-stat">
+          <div class="big-number">5</div>
+          <div class="big-label">Core Team Members</div>
+        </div>
+        <div class="about-card-stat">
+          <div class="big-number">$300</div>
+          <div class="big-label">Google Cloud Credit Powered</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="section-header team-header">
+      <span class="section-tag">The People</span>
+      <h2 class="section-title">Meet Our Team</h2>
+      <p class="section-subtitle">Five passionate individuals united by a shared dream of making AI accessible for everyone.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- Jee Thy - Founder -->
+      <div class="team-card team-card-founder reveal-on-scroll">
+        <div class="team-avatar-wrap">
+          <div class="team-avatar-ring">
+            <img
+              src="team-jeethy.jpg"
+              alt="Jee Thy - Founder"
+              class="team-avatar"
+              loading="lazy"
+            />
+          </div>
+          <div class="founder-badge"><i class="fas fa-crown"></i></div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Jee Thy</h3>
+          <span class="team-role role-founder">Founder & CEO</span>
+          <p class="team-bio">Visionary entrepreneur and AI enthusiast who founded JeeThy Labs to bring accessible AI tools to Southeast Asia. Passionate about technology, innovation, and empowering the next generation of creators.</p>
+          <div class="team-links">
+            <a href="mailto:jeethy@jeethylabs.site" class="team-link" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/jeethy-labs" class="team-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="team-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sok Sabay -->
+      <div class="team-card reveal-on-scroll">
+        <div class="team-avatar-wrap">
+          <div class="team-avatar-ring">
+            <img
+              src="team-soksabay.jpg"
+              alt="Sok Sabay - Co-Founder"
+              class="team-avatar"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Sok Sabay</h3>
+          <span class="team-role">Co-Founder & CTO</span>
+          <p class="team-bio">Full-stack engineer and cloud architect with deep expertise in AI/ML pipelines. Leads the engineering team to deliver scalable, reliable AI infrastructure on Google Cloud.</p>
+          <div class="team-links">
+            <a href="mailto:admin@jeethylabs.site" class="team-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/jeethy-labs" class="team-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="team-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dek Rean -->
+      <div class="team-card reveal-on-scroll">
+        <div class="team-avatar-wrap">
+          <div class="team-avatar-ring">
+            <img
+              src="team-dekrean.jpg"
+              alt="Dek Rean - Lead Developer"
+              class="team-avatar"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Dek Rean</h3>
+          <span class="team-role">Lead Developer</span>
+          <p class="team-bio">Backend specialist and AI integration expert who architects the core AI processing engines. Enthusiastic about open-source development, DevOps, and building developer-friendly APIs.</p>
+          <div class="team-links">
+            <a href="mailto:admin@jeethylabs.site" class="team-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/jeethy-labs" class="team-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="team-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Su Sokna -->
+      <div class="team-card reveal-on-scroll">
+        <div class="team-avatar-wrap">
+          <div class="team-avatar-ring">
+            <img
+              src="team-susokna.jpg"
+              alt="Su Sokna - UI/UX Designer"
+              class="team-avatar"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Su Sokna</h3>
+          <span class="team-role">UI/UX Designer</span>
+          <p class="team-bio">Creative designer and product strategist who crafts beautiful, intuitive user experiences. Passionate about making complex AI interactions feel simple, delightful, and human-centered.</p>
+          <div class="team-links">
+            <a href="mailto:admin@jeethylabs.site" class="team-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/jeethy-labs" class="team-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="team-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tov Romnas -->
+      <div class="team-card reveal-on-scroll">
+        <div class="team-avatar-wrap">
+          <div class="team-avatar-ring">
+            <img
+              src="team-tovromnas.jpg"
+              alt="Tov Romnas - Growth & Marketing"
+              class="team-avatar"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Tov Romnas</h3>
+          <span class="team-role">Growth & Marketing</span>
+          <p class="team-bio">Digital marketing strategist and startup growth specialist. Drives user acquisition, community building, and brand awareness — connecting JeeThy Labs with users across Southeast Asia.</p>
+          <div class="team-links">
+            <a href="mailto:admin@jeethylabs.site" class="team-link"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/jeethy-labs" class="team-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="team-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-title">Contact JeeThy Labs</h2>
+      <p class="section-subtitle">Have questions, feedback, or want to partner with us? We'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info reveal-on-scroll">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-crown"></i></div>
+          <div>
+            <div class="contact-label">Founder</div>
+            <a href="mailto:jeethy@jeethylabs.site" class="contact-link">jeethy@jeethylabs.site</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="contact-label">General Contact</div>
+            <a href="mailto:admin@jeethylabs.site" class="contact-link">admin@jeethylabs.site</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-handshake"></i></div>
+          <div>
+            <div class="contact-label">Partnerships</div>
+            <a href="mailto:startup@jeethylabs.site" class="contact-link">startup@jeethylabs.site</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <a href="https://github.com/jeethy-labs" target="_blank" rel="noopener" class="contact-link">github.com/jeethy-labs</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <div class="contact-label">Location</div>
+            <span class="contact-link">Phnom Penh, Cambodia 120102</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feedback Form -->
+      <div class="contact-form-wrap reveal-on-scroll">
+        <form class="contact-form" id="feedbackForm">
+          <h3>Send us Feedback</h3>
+          <div class="form-group">
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject" name="subject">
+              <option value="feedback">General Feedback</option>
+              <option value="support">Technical Support</option>
+              <option value="partnership">Partnership Inquiry</option>
+              <option value="billing">Billing Question</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us what you think, report a bug, or ask a question..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Thank you! Your message has been sent.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEGAL COMPACT SECTION (Privacy + Terms — modal-based)
+============================================================ -->
+<section id="privacy" class="section legal-compact-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Legal</span>
+      <h2 class="section-title">Legal & Policies</h2>
+      <p class="section-subtitle">We're committed to transparency. Read our full policies below.</p>
+    </div>
+      <!-- Privacy Card -->
+      <div class="legal-card" onclick="openModal('privacyModal')">
+        <div class="legal-card-icon"><i class="fas fa-shield-halved"></i></div>
+        <div class="legal-card-body">
+          <h3>Privacy Policy</h3>
+          <p>Learn how we collect, use, protect, and share your personal data — including GDPR & CCPA rights.</p>
+          <span class="legal-card-meta">Last updated: January 1, 2025</span>
+        </div>
+        <div class="legal-card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Terms Card -->
+      <div class="legal-card" onclick="openModal('termsModal')">
+        <div class="legal-card-icon"><i class="fas fa-file-contract"></i></div>
+        <div class="legal-card-body">
+          <h3>Terms of Service</h3>
+          <p>Understand the rules of using JeeThy Labs — acceptable use, IP, billing, liability, and governing law.</p>
+          <span class="legal-card-meta">Last updated: January 1, 2025</span>
+        </div>
+        <div class="legal-card-arrow"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MODAL — PRIVACY POLICY
+============================================================ -->
+<div class="modal-overlay" id="privacyModal" onclick="closeModalOutside(event, 'privacyModal')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2><i class="fas fa-shield-halved"></i> Privacy Policy</h2>
+      <button class="modal-close" onclick="closeModal('privacyModal')" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-updated">Last updated: January 1, 2025</p>
+
+      <div class="legal-block">
+        <h3>1. Introduction</h3>
+        <p>JeeThy Labs ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy describes how we collect, use, store, share, and safeguard your data when you use our website at <strong>jeethylabs.site</strong> and our AI-powered tools including AI Assistant, Image Generate, and Song Generate.</p>
+        <p>By using our services, you agree to the practices described in this policy.</p>
+      </div>
+      <div class="legal-block">
+        <h3>2. Information We Collect</h3>
+        <p><strong>a. Information you provide directly:</strong></p>
+        <ul>
+          <li>Account registration details (name, email address, password)</li>
+          <li>Profile information (optional profile photo, bio)</li>
+          <li>Payment and billing information (processed securely through third-party payment processors)</li>
+          <li>Messages, prompts, and inputs you submit to our AI tools</li>
+          <li>Feedback, support requests, and contact form submissions</li>
+        </ul>
+        <p><strong>b. Information collected automatically:</strong></p>
+        <ul>
+          <li>IP address and approximate geographic location</li>
+          <li>Browser type, version, and operating system</li>
+          <li>Pages visited, features used, and session duration</li>
+          <li>Device identifiers and cookies</li>
+          <li>API usage patterns and request logs</li>
+        </ul>
+      </div>
+      <div class="legal-block">
+        <h3>3. How We Use Your Information</h3>
+        <ul>
+          <li>To provide, operate, and maintain our AI tools and services</li>
+          <li>To process your transactions and manage your account</li>
+          <li>To personalize your experience and deliver relevant content</li>
+          <li>To improve our AI models and platform performance (with your consent)</li>
+          <li>To communicate with you about updates, new features, and promotions</li>
+          <li>To detect, investigate, and prevent fraudulent or illegal activity</li>
+          <li>To comply with legal obligations and enforce our Terms of Service</li>
+        </ul>
+      </div>
+      <div class="legal-block">
+        <h3>4. Data Sharing and Third Parties</h3>
+        <p>We do not sell your personal data. We may share your information with Google Cloud Platform (infrastructure), payment processors (Stripe), analytics providers (anonymized), and law enforcement when legally required. All third-party processors are contractually bound to protect your data.</p>
+      </div>
+      <div class="legal-block">
+        <h3>5. Data Retention</h3>
+        <p>Conversation logs are retained for up to 90 days. Generated content is stored for 30 days unless saved to your account. You may request deletion at any time via <a href="mailto:admin@jeethylabs.site">admin@jeethylabs.site</a>.</p>
+      </div>
+      <div class="legal-block">
+        <h3>6. Data Security</h3>
+        <p>We implement AES-256 encryption at rest, TLS 1.3 in transit, regular security audits, MFA for admin accounts, and intrusion detection systems. No system is 100% secure — use strong, unique passwords.</p>
+      </div>
+      <div class="legal-block">
+        <h3>7. Your Rights (GDPR & CCPA)</h3>
+        <p>You have the right to access, correct, delete, port, or restrict processing of your data. You may also opt out of marketing at any time. To exercise these rights: <a href="mailto:admin@jeethylabs.site">admin@jeethylabs.site</a>.</p>
+      </div>
+      <div class="legal-block">
+        <h3>8. Cookies</h3>
+        <p>We use essential cookies for authentication, analytics cookies (usage patterns), and preference cookies (settings). You may disable non-essential cookies via browser settings without impacting core functionality.</p>
+      </div>
+      <div class="legal-block">
+        <h3>9. Children's Privacy</h3>
+        <p>Our services are not directed to children under 13. We do not knowingly collect data from children. Contact us immediately if you believe a child has provided us with personal information.</p>
+      </div>
+      <div class="legal-block">
+        <h3>10. Changes & Contact</h3>
+        <p>We may update this policy with 14 days notice for significant changes. For inquiries: <a href="mailto:admin@jeethylabs.site">admin@jeethylabs.site</a> — JeeThy Labs, Phnom Penh, Cambodia 120102.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     MODAL — TERMS OF SERVICE
+============================================================ -->
+<div class="modal-overlay" id="termsModal" onclick="closeModalOutside(event, 'termsModal')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2><i class="fas fa-file-contract"></i> Terms of Service</h2>
+      <button class="modal-close" onclick="closeModal('termsModal')" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-updated">Last updated: January 1, 2025</p>
+
+      <div class="legal-block">
+        <h3>1. Acceptance of Terms</h3>
+        <p>By accessing or using JeeThy Labs at <strong>jeethylabs.site</strong>, you agree to these Terms of Service. If you do not agree, do not use our platform.</p>
+      </div>
+      <div class="legal-block">
+        <h3>2. Description of Services</h3>
+        <p>JeeThy Labs provides AI-powered tools: <strong>AI Assistant</strong> (conversational AI), <strong>Image Generate</strong> (text-to-image), and <strong>Song Generate</strong> (text-to-music). Services may be modified or discontinued at any time at our discretion.</p>
+      </div>
+      <div class="legal-block">
+        <h3>3. User Accounts</h3>
+        <p>You agree to provide accurate registration information, maintain account security, notify us of unauthorized access, and accept responsibility for all account activities. We reserve the right to terminate accounts that violate these Terms.</p>
+      </div>
+      <div class="legal-block">
+        <h3>4. Acceptable Use Policy</h3>
+        <p>You agree NOT to use our platform to generate illegal or harmful content, create deepfakes or misinformation, harass others, infringe IP rights, hack or reverse-engineer our systems, generate spam or malware, or violate applicable laws. Violations result in immediate account termination without refund.</p>
+      </div>
+      <div class="legal-block">
+        <h3>5. Intellectual Property</h3>
+        <p>JeeThy Labs owns all platform rights. You retain ownership of your input content but grant us a non-exclusive license to process it. AI-generated outputs are licensed to you for personal and commercial use based on your plan tier.</p>
+      </div>
+      <div class="legal-block">
+        <h3>6. Payment and Billing</h3>
+        <ul>
+          <li>Pro plan billed monthly in advance</li>
+          <li>All fees are non-refundable except where required by law</li>
+          <li>Pricing changes notified 30 days in advance</li>
+          <li>Cancel anytime from your account dashboard</li>
+        </ul>
+      </div>
+      <div class="legal-block">
+        <h3>7. Limitation of Liability</h3>
+        <p>JeeThy Labs shall not be liable for indirect, incidental, or consequential damages. Our total liability shall not exceed the amount paid by you in the 12 months preceding any claim.</p>
+      </div>
+      <div class="legal-block">
+        <h3>8. Governing Law</h3>
+        <p>These Terms are governed by the laws of the Kingdom of Cambodia. Disputes shall be subject to the exclusive jurisdiction of the courts in Phnom Penh, Cambodia.</p>
+      </div>
+      <div class="legal-block">
+        <h3>9. Changes & Contact</h3>
+        <p>We may revise these Terms with 14 days notice for significant changes. Questions: <a href="mailto:admin@jeethylabs.site">admin@jeethylabs.site</a> — JeeThy Labs, Phnom Penh, Cambodia 120102.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="footer-glow"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo footer-logo">
+          <img src="logo.jpg" alt="JeeThy Labs Logo" class="logo-img" width="36" height="36" />
+          <span class="logo-text">JeeThy<span class="logo-accent">Labs</span></span>
+        </a>
+        <p class="footer-tagline">Empowering creators with AI — built in Cambodia, for the world.</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a href="https://crunchbase.com" target="_blank" rel="noopener" class="social-link" aria-label="Crunchbase">
+            <i class="fas fa-chart-line"></i> Crunchbase
+          </a>
+          <a href="https://github.com/jeethy-labs" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="#tools">AI Assistant</a></li>
+            <li><a href="#tools">Image Generate</a></li>
+            <li><a href="#tools">Song Generate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#about">About & Team</a></li>
+            <li><a href="#partners">Partnership</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:admin@jeethylabs.site">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#privacy" onclick="openModal('privacyModal'); return false;">Privacy Policy</a></li>
+            <li><a href="#" onclick="openModal('termsModal'); return false;">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024–2025 JeeThy Labs. All rights reserved. Built with <i class="fas fa-heart" style="color: #ef4444;"></i> in Phnom Penh, Cambodia.</p>
+      <p class="footer-meta">Powered by <a href="https://cloud.google.com" target="_blank" rel="noopener">Google Cloud</a> · Deployed on <a href="https://railway.app" target="_blank" rel="noopener">Railway Pro</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     MODAL — APP LAUNCH (Try Tool)
+============================================================ -->
+<div class="modal-overlay" id="appModal" onclick="closeModalOutside(event, 'appModal')">
+  <div class="modal-box modal-app">
+    <div class="modal-header">
+      <h2 id="appModalTitle"><i class="fas fa-rocket"></i> Launch Tool</h2>
+      <button class="modal-close" onclick="closeModal('appModal')" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="modal-body app-modal-body">
+      <div class="app-modal-icon" id="appModalIcon"></div>
+      <p class="app-modal-desc" id="appModalDesc"></p>
+      <div class="app-modal-status">
+        <span class="badge-dot"></span>
+        <span id="appModalStatus">Platform launching soon</span>
+      </div>
+      <div class="app-modal-actions">
+        <a href="#pricing" onclick="closeModal('appModal')" class="btn btn-primary btn-lg" id="appModalCTA">
+          <i class="fas fa-arrow-right"></i> Get Early Access
+        </a>
+        <a href="mailto:startup@jeethylabs.site" class="btn btn-outline btn-lg">
+          <i class="fas fa-envelope"></i> Contact Us
+        </a>
+      </div>
+      <p class="app-modal-note">JeeThy Labs is currently in MVP phase. Tools will be fully live once we secure infrastructure funding from our partners. <a href="#roadmap" onclick="closeModal('appModal')">View Roadmap →</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
