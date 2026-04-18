@@ -194,21 +194,21 @@ const appTools = {
     icon: '<i class="fas fa-brain"></i>',
     iconClass: 'icon-chat',
     desc: 'Engage in natural conversations, generate code, summarize documents, and more — powered by state-of-the-art LLMs on Google Cloud.',
-    status: 'In Development · Launching Soon'
+    status: 'Live Now · Free to Try'
   },
   image: {
     title: '<i class="fas fa-palette"></i> Image Generate',
     icon: '<i class="fas fa-palette"></i>',
     iconClass: 'icon-image',
     desc: 'Transform text prompts into stunning high-resolution images. Multiple styles, inpainting, batch generation — all powered by AI.',
-    status: 'In Development · Launching Soon'
+    status: 'Live Now · Free to Try'
   },
   song: {
     title: '<i class="fas fa-music"></i> Song Generate',
     icon: '<i class="fas fa-music"></i>',
     iconClass: 'icon-song',
     desc: 'Create original music from text prompts — choose genre, mood, and instruments. Perfect for creators, filmmakers, and musicians.',
-    status: 'Beta · Pending Infrastructure Funding'
+    status: 'Live Now · Free to Try'
   }
 };
 
