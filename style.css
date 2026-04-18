@@ -1842,3 +1842,10 @@ a, button, [role="button"], input, textarea, select {
   background: var(--grad-cyan);
   transform: scale(1.25);
 }
+
+/* ── Partner SVG Logos ── */
+.partner-logo svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
