@@ -204,10 +204,10 @@ const appTools = {
     status: 'Live Now · Free to Try'
   },
   song: {
-    title: '<i class="fas fa-music"></i> Song Generate',
+    title: '<i class="fas fa-music"></i> AI Music Generate',
     icon: '<i class="fas fa-music"></i>',
     iconClass: 'icon-song',
-    desc: 'Create original music from text prompts — choose genre, mood, and instruments. Perfect for creators, filmmakers, and musicians.',
+    desc: 'Create original AI music from text prompts — choose genre, mood, and instruments. Perfect for creators, filmmakers, and musicians.',
     status: 'Live Now · Free to Try'
   }
 };
