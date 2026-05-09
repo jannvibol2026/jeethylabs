@@ -369,6 +369,12 @@
       <p class="section-subtitle">Start for free, scale as you grow. No hidden fees, no contracts.</p>
     </div>
 
+    <!-- Beta Notice Banner -->
+    <div class="pricing-beta-notice reveal-on-scroll">
+      <i class="fas fa-flask"></i>
+      <span>Payments are currently in beta while we scale our AI infrastructure.</span>
+    </div>
+
     <div class="pricing-grid">
 
       <!-- Free -->
@@ -379,67 +385,83 @@
             <span class="price-amount">$0</span>
             <span class="price-period">/ month</span>
           </div>
-          <p class="plan-desc">Perfect for exploring JeeThy Labs and testing your first AI projects.</p>
+          <p class="plan-desc">Try all tools, no credit card needed.</p>
         </div>
         <ul class="plan-features">
-          <li><i class="fas fa-check"></i> 50 AI Assistant messages/day</li>
-          <li><i class="fas fa-check"></i> 10 image generations/month</li>
-          <li><i class="fas fa-check"></i> 5 music generations/month</li>
-          <li><i class="fas fa-check"></i> Standard quality output</li>
-          <li><i class="fas fa-check"></i> Community support</li>
-          <li class="feature-limited"><i class="fas fa-times"></i> No API access</li>
-          <li class="feature-limited"><i class="fas fa-times"></i> No priority processing</li>
-          <li class="feature-limited"><i class="fas fa-times"></i> Watermarked outputs</li>
+          <li><i class="fas fa-check"></i> 20 Chat msg/day</li>
+          <li><i class="fas fa-check"></i> 5 Images/day (720px)</li>
+          <li><i class="fas fa-check"></i> 3 Music generations/day (~55s)</li>
+          <li class="feature-limited"><i class="fas fa-times"></i> No watermark removal</li>
+          <li class="feature-limited"><i class="fas fa-times"></i> No Custom API key</li>
         </ul>
-        <a href="https://app.jeethylabs.site" target="_blank" class="btn btn-outline btn-full"><i class="fas fa-rocket"></i> Try Free</a>
+        <a href="https://app.jeethylabs.site" target="_blank" class="btn btn-outline btn-full"><i class="fas fa-rocket"></i> Get Started Free</a>
       </div>
 
       <!-- Pro -->
       <div class="pricing-card pricing-card-featured reveal-on-scroll">
-        <div class="plan-popular">Most Popular</div>
+        <div class="plan-popular"><i class="fas fa-star"></i> Popular</div>
         <div class="plan-header">
           <span class="plan-name">Pro</span>
           <div class="plan-price">
-            <span class="price-amount">$9.99</span>
-            <span class="price-period">/ month</span>
+            <span class="price-amount">$5.99</span>
+            <span class="price-period">/mo</span>
           </div>
-          <p class="plan-desc">For creators and small teams who need more power and flexibility.</p>
+          <p class="plan-desc">For creators who need more power.</p>
         </div>
         <ul class="plan-features">
-          <li><i class="fas fa-check"></i> 1,000 AI Assistant messages/day</li>
-          <li><i class="fas fa-check"></i> 200 image generations/month</li>
-          <li><i class="fas fa-check"></i> 50 music generations/month</li>
-          <li><i class="fas fa-check"></i> HD quality output</li>
-          <li><i class="fas fa-check"></i> Priority email support</li>
-          <li><i class="fas fa-check"></i> Basic API access</li>
-          <li><i class="fas fa-check"></i> Priority processing queue</li>
-          <li class="feature-limited"><i class="fas fa-times"></i> No watermarks</li>
+          <li><i class="fas fa-check"></i> 100 Chat msg/day</li>
+          <li><i class="fas fa-check"></i> 25 Images/day (HD 1024px)</li>
+          <li><i class="fas fa-check"></i> 15 Music generations/day (~3 min)</li>
+          <li><i class="fas fa-check"></i> Export chat history</li>
+          <li><i class="fas fa-check"></i> Custom lyrics support</li>
+          <li><i class="fas fa-check"></i> No watermark on images</li>
         </ul>
-        <a href="https://app.jeethylabs.site" target="_blank" class="btn btn-primary btn-full"><i class="fas fa-rocket"></i> Launch App</a>
+        <button onclick="openRequestModal('Pro', '$5.99/mo')" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Request Access</button>
+      </div>
+
+      <!-- Pro+ -->
+      <div class="pricing-card pricing-card-proplus reveal-on-scroll">
+        <div class="plan-best-value"><i class="fas fa-fire"></i> Best Value</div>
+        <div class="plan-header">
+          <span class="plan-name">Pro<span class="plan-plus">+</span></span>
+          <div class="plan-price">
+            <span class="price-amount">$24.99</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <p class="plan-desc">Unlimited creativity, full access.</p>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fas fa-infinity"></i> Unlimited Chat</li>
+          <li><i class="fas fa-check"></i> 150 Images/day (2K · 2048px)</li>
+          <li><i class="fas fa-check"></i> 100 Music/day (~3:15 min)</li>
+          <li><i class="fas fa-check"></i> Duet &amp; Choir vocals</li>
+          <li><i class="fas fa-check"></i> Khmer Premium genres</li>
+          <li><i class="fas fa-check"></i> System Prompt / AI role</li>
+          <li><i class="fas fa-check"></i> Export PDF/TXT chat</li>
+          <li><i class="fas fa-check"></i> Reference image (4 imgs)</li>
+        </ul>
+        <button onclick="openRequestModal('Pro+', '$24.99/mo')" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Request Access</button>
       </div>
 
       <!-- Max -->
       <div class="pricing-card pricing-card-max reveal-on-scroll">
-        <div class="plan-coming-soon">Coming Soon</div>
+        <div class="plan-coming-soon"><i class="fas fa-clock"></i> Coming Soon</div>
         <div class="plan-header">
           <span class="plan-name">Max</span>
           <div class="plan-price">
-            <span class="price-amount">???</span>
-            <span class="price-period">/ month</span>
+            <span class="price-amount">TBA</span>
+            <span class="price-period">/mo</span>
           </div>
-          <p class="plan-desc">Unlimited power for enterprises, agencies, and power users.</p>
+          <p class="plan-desc">Ultimate plan · Priority access.</p>
         </div>
         <ul class="plan-features">
-          <li><i class="fas fa-check"></i> Unlimited AI messages</li>
-          <li><i class="fas fa-check"></i> Unlimited image generations</li>
-          <li><i class="fas fa-check"></i> Unlimited music generations</li>
-          <li><i class="fas fa-check"></i> 4K ultra quality output</li>
-          <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
-          <li><i class="fas fa-check"></i> Full API access + webhooks</li>
-          <li><i class="fas fa-check"></i> Custom model fine-tuning</li>
-          <li><i class="fas fa-check"></i> White-label options</li>
+          <li><i class="fas fa-infinity"></i> Unlimited Everything</li>
+          <li><i class="fas fa-check"></i> 4K Images (3840×2160)</li>
+          <li><i class="fas fa-check"></i> Music ~4:25–5:25 min</li>
+          <li><i class="fas fa-check"></i> Lyria Pro audio</li>
+          <li><i class="fas fa-check"></i> Priority generation</li>
         </ul>
-        <a href="#contact" class="btn btn-outline btn-full btn-disabled" aria-disabled="true">Notify Me</a>
+        <button onclick="openRequestModal('Max', 'TBA')" class="btn btn-outline btn-full"><i class="fas fa-bell"></i> Request Access</button>
       </div>
 
     </div>
@@ -1271,5 +1293,72 @@
     }
   });
 })();
-</script></body>
+
+// ── Request Access Modal ──
+function openRequestModal(planName, planPrice) {
+  const badge = document.getElementById('requestPlanBadge');
+  if (badge) badge.innerHTML = '<i class="fas fa-crown"></i> ' + planName + ' Plan · ' + planPrice;
+  document.getElementById('requestAccessForm').reset();
+  const success = document.getElementById('requestSuccess');
+  if (success) success.classList.remove('show');
+  openModal('requestModal');
+}
+
+const requestForm = document.getElementById('requestAccessForm');
+const requestSuccess = document.getElementById('requestSuccess');
+if (requestForm && requestSuccess) {
+  requestForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = requestForm.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    setTimeout(() => {
+      requestForm.reset();
+      requestSuccess.classList.add('show');
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Request';
+    }, 1500);
+  });
+}
+
+</script>
+<!-- ============================================================
+     REQUEST ACCESS MODAL
+============================================================ -->
+<div class="modal-overlay" id="requestModal" onclick="closeModalOutside(event,'requestModal')">
+  <div class="modal-box" style="max-width:460px">
+    <div class="modal-header">
+      <h3 class="modal-title"><i class="fas fa-paper-plane"></i> Request Access</h3>
+      <button class="modal-close" onclick="closeModal('requestModal')" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-body" style="padding:var(--space-6)">
+      <div class="request-plan-badge" id="requestPlanBadge"></div>
+      <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-5);margin-top:var(--space-4);">
+        Payments are currently in beta. Fill in your details and we will contact you to set up access manually.
+      </p>
+      <form id="requestAccessForm">
+        <div class="form-group">
+          <label for="reqName">Your Name</label>
+          <input type="text" id="reqName" placeholder="Sok Sabay" required />
+        </div>
+        <div class="form-group">
+          <label for="reqEmail">Email Address</label>
+          <input type="email" id="reqEmail" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="reqTelegram">Telegram (optional)</label>
+          <input type="text" id="reqTelegram" placeholder="@yourhandle" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" style="margin-top:var(--space-2)">
+          <i class="fas fa-paper-plane"></i> Submit Request
+        </button>
+      </form>
+      <div id="requestSuccess" class="form-success" style="margin-top:var(--space-4)">
+        <i class="fas fa-check-circle"></i> Request sent! We will contact you within 24 hours.
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
